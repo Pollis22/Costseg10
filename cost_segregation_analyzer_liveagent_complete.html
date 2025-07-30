@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cost Segregation Analyzer | Creative Planning</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FAFAFA;
+      color: #555555;
+    }
+    /* VOICE WIDGET STYLES */
+    .voice-widget-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto;
+      padding: 10px;
+      overflow: visible !important;
+    }
+    elevenlabs-convai {
+      width: 400px !important;
+      height: 120px !important;
+      min-width: 400px !important;
+      min-height: 120px !important;
+      max-width: 400px !important;
+      max-height: 120px !important;
+      display: block !important;
+      margin: 0 auto !important;
+      overflow: visible !important;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    elevenlabs-convai iframe {
+      width: 100% !important;
+      height: 100% !important;
+      border: none !important;
+      border-radius: 12px !important;
+    }
+    @media (max-width: 600px) {
+      elevenlabs-convai {
+        width: 350px !important;
+        height: 120px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Voice Assistant Section -->
+  <div class="section voice-assistant-section">
+    <div class="voice-assistant-title">🎙️ AI Voice Assistant</div>
+    <div class="voice-assistant-subtitle">
+      Ask questions about cost segregation, get guidance on your property analysis, or let the AI help you through the process.
+    </div>
+    <div class="voice-widget-container">
+      <elevenlabs-convai agent-id="agent_01k0achpthfewtj7cytwye8b70"></elevenlabs-convai>
+    </div>
+  </div>
+
+  <!-- ELEVENLABS WIDGET SCRIPT -->
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed@latest" async></script>
+</body>
+</html>
